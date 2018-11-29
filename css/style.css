@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'AsapRegular';
+  src: url("../fonts/AsapRegular.eot");
+  src: url("../fonts/AsapRegular.eot") format("embedded-opentype"), url("../fonts/AsapRegular.woff2") format("woff2"), url("../fonts/AsapRegular.woff") format("woff"), url("../fonts/AsapRegular.ttf") format("truetype"), url("../fonts/AsapRegular.svg#AsapRegular") format("svg"); }
+@font-face {
+  font-family: 'AsapMedium';
+  src: url("../fonts/AsapMedium.eot");
+  src: url("../fonts/AsapMedium.eot") format("embedded-opentype"), url("../fonts/AsapMedium.woff2") format("woff2"), url("../fonts/AsapMedium.woff") format("woff"), url("../fonts/AsapMedium.ttf") format("truetype"), url("../fonts/AsapMedium.svg#AsapMedium") format("svg"); }
+.container {
+  max-width: 1170px;
+  width: 100%; }
+
+header {
+  background: url("../images/header_bg.png") repeat;
+  position: relative; }
+  header .navbar-default {
+    border: none;
+    background: none;
+    box-shadow: none; }
+    header .navbar-default .navbar-collapse {
+      margin: auto;
+      border: transparent; }
+    header .navbar-default .navbar-toggle {
+      float: left;
+      padding: 0;
+      margin-left: 15px;
+      border-radius: 13px;
+      height: 26px;
+      width: 26px;
+      border: solid 1px black;
+      opacity: 0.5;
+      margin-top: 16px; }
+      header .navbar-default .navbar-toggle:focus {
+        background-color: #98999d; }
+  header .container {
+    max-width: 1200px; }
+    header .container .logo {
+      margin-top: 15px;
+      outline: none; }
+      @media screen and (max-width: 767px) {
+        header .container .logo {
+          position: absolute;
+          right: 0;
+          top: -14px; } }
+    header .container .navbar-nav li:first-child {
+      margin-right: 38px; }
+    header .container .navbar-nav li:nth-child(2) {
+      margin-right: 37px; }
+    header .container .navbar-nav li:nth-child(3) {
+      margin-right: 40px; }
+    header .container .navbar-nav li:nth-child(4) {
+      margin-right: 40px; }
+    header .container .navbar-nav li a {
+      font: 16px 'AsapRegular';
+      color: #4d4d4d;
+      text-transform: uppercase;
+      padding: 0 0 5px 0;
+      margin-top: 30px;
+      border-bottom: solid 2px transparent; }
+      header .container .navbar-nav li a:hover {
+        border-bottom: solid 2px #878787;
+        text-transform: none;
+        letter-spacing: 7px; }
+    header .container .navbar-header i {
+      line-height: 10px;
+      width: 15px;
+      height: 15px; }
+  header .row h1 {
+    font: 90px 'AsapMedium';
+    color: #4d4d4d;
+    line-height: 70px;
+    margin-top: 180px;
+    margin-bottom: 15px; }
+    @media screen and (max-width: 992px) {
+      header .row h1 {
+        font-size: 60px;
+        margin-top: 60px; } }
+    @media screen and (max-width: 767px) {
+      header .row h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+        text-align: center;
+        margin-top: 10px; } }
+  header .row p {
+    font: 22px 'AsapMedium';
+    color: #4d4d4d;
+    opacity: 0.5;
+    margin-left: 5px; }
+    @media screen and (max-width: 767px) {
+      header .row p {
+        font-size: 18px;
+        text-align: center; } }
+  @media screen and (max-width: 767px) {
+    header .row nav {
+      text-align: center; } }
+  header .row nav a {
+    display: inline-block;
+    font: 16px/48px 'AsapMedium';
+    text-align: center;
+    color: #4d4d4d;
+    margin-left: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px;
+    width: 160px;
+    height: 50px;
+    margin-top: 20px;
+    transition: 0.3s; }
+    @media screen and (max-width: 768px) {
+      header .row nav a {
+        width: 100px;
+        height: 35px;
+        line-height: 33px;
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 15px; } }
+    header .row nav a:last-child {
+      margin-left: 20px; }
+      @media screen and (max-width: 767px) {
+        header .row nav a:last-child {
+          margin-left: 5px; } }
+    header .row nav a:hover {
+      box-shadow: 0 10px 20px 0 #ababab;
+      transition: 0.3s;
+      border: solid 1px transparent;
+      background-color: #fff; }
+  header .row img {
+    margin-top: 25px;
+    float: right; }
+    @media screen and (max-width: 1169px) {
+      header .row img {
+        height: 500px; } }
+    @media screen and (max-width: 992px) {
+      header .row img {
+        height: 400px; } }
+    @media screen and (max-width: 768px) {
+      header .row img {
+        height: 350px;
+        float: none;
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
