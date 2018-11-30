@@ -16,6 +16,16 @@
   url('../fonts/AsapMedium.ttf') format('truetype'),
   url('../fonts/AsapMedium.svg#AsapMedium') format('svg');
 }
+@font-face {
+  font-family: 'AsapBold';
+  src: url('../fonts/AsapBold.eot');
+  src: url('../fonts/AsapBold.eot') format('embedded-opentype'),
+  url('../fonts/AsapBold.woff2') format('woff2'),
+  url('../fonts/AsapBold.woff') format('woff'),
+  url('../fonts/AsapBold.ttf') format('truetype'),
+  url('../fonts/AsapBold.svg#AsapBold') format('svg');
+}
+
 
 @mixin max-screen($res){
   @media screen and (max-width: $res) {
@@ -24,7 +34,7 @@
 }
 
 .container{
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -42,7 +52,7 @@ header {
     .navbar-toggle{
       float: left;
       padding: 0;
-      margin-left: 15px;
+      margin-left: 35px;
       border-radius: 13px;
       height: 26px;
       width: 26px;
@@ -55,7 +65,6 @@ header {
     }
   }
   .container{
-    max-width: 1200px;
     .logo {
       margin-top: 15px;
       @include max-screen(767px){
@@ -88,8 +97,6 @@ header {
           border-bottom: solid 2px transparent;
           &:hover{
             border-bottom: solid 2px #878787;
-            text-transform: none;
-            letter-spacing: 7px;
           }
         }
       }
@@ -179,12 +186,190 @@ header {
         height: 400px;
       }
       @include max-screen(768px){
-        height: 350px;
         float: none;
         display: block;
         margin: auto;
         width: 100%;
         height: 100%;
+      }
+    }
+  }
+}
+.section_1{
+  margin-top: 109px;
+  margin-bottom: 124px;
+  @include max-screen(992px){
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  @include max-screen(767px){
+    margin-bottom: 40px;
+  }
+  .container{padding-left: -15px;padding-right: -15px;
+    .row{
+      img{
+        width: 100%;
+        height: 100%;
+        @include max-screen(1169px){
+          width: 100%;
+          height: 100%;
+        }
+        @include max-screen(992px){
+          width: 100%;
+          height: 100%;
+          margin-top: 40px;
+        }
+        @include max-screen(992px){
+          margin-top: 0;
+        }
+      }
+      .col-md-11{
+        margin-left: -15px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        @include max-screen(992px){
+          margin-top: 0;
+        }
+        h2{
+          font: 46px/49px 'AsapBold';
+          text-transform: uppercase;
+          letter-spacing: 6px;
+          color: #7c7c7c;
+          margin-bottom: 0;
+          @include max-screen(992px){
+            font-size: 40px;
+          }
+          @include max-screen(767px){
+            text-align: center;
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 12px;
+          }
+          &:before{
+            content: "";
+            display: block;
+            border-top: solid 4px;
+            width: 60px;
+            color: #7a7a7a;
+            clear: both;
+            margin-bottom: 10px;
+            @include max-screen(767px){
+              width: 100px;
+              margin: 0 auto 10px;
+            }
+            }
+        }
+        p{
+          font: 16px 'AsapRegular';
+          line-height: 26px;
+          @include max-screen(767px){
+            width: 80%;
+            margin-left: 8%;
+            text-align: justify;
+            margin-bottom: 10px;
+          }
+        }
+        nav{
+          margin-top: 33px;
+          @include max-screen(767px){
+            text-align: center;
+            margin-top: 10px;
+          }
+          @include max-screen(992px){
+            margin-top: 1px;
+          }
+
+           a{
+             display: inline-block;
+             font: 16px/48px 'AsapMedium';
+             text-align: center;
+             letter-spacing: 1px;
+             color: #4d4d4d;
+             text-decoration: none;
+             text-transform: uppercase;
+             border: solid 1px;
+             width: 245px;
+             height: 50px;
+             transition: 0.3s;
+             &:hover{
+               box-shadow: 0 10px 20px 0 #ababab;
+               transition: 0.3s;
+               border: solid 1px transparent;
+               background-color: #fff;
+             }
+             @include max-screen(992px){
+               width: 160px;
+               height: 35px;
+               line-height: 33px;
+               font-size: 12px;
+               margin-top: 5px;
+               margin-bottom: 15px;
+             }
+           }
+         }
+      }
+    }
+  }
+}
+
+.section_2{
+  background-color: #f6f6f6;
+  .container{
+    .row{
+      .col-md-12{
+        h2{
+          font: 46px/49px 'AsapBold';
+          text-transform: uppercase;
+          letter-spacing: 6px;
+          color: #7c7c7c;
+          margin-top: 120px;
+          margin-bottom: 60px;
+          &:before{
+            content: "";
+            display: block;
+            border-top: solid 4px;
+            width: 60px;
+            color: #7a7a7a;
+            clear: both;
+            margin: auto auto 10px;
+            @include max-screen(767px){
+              width: 100px;
+              margin: 0 auto 10px;
+            }
+          }
+          @include max-screen(992px){
+            font-size: 40px;
+            margin-top: 30px;
+          }
+          @include max-screen(767px){
+            text-align: center;
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 25px;
+          }
+        }
+      }
+      .service_icon{
+        min-height: 140px;
+        margin-bottom: 60px;
+        @include max-screen(767px){
+          margin:0;
+        }
+        a{
+          text-decoration: none;
+          text-align: center;
+          img{
+            margin: 0 auto;
+            text-align: center;
+          }
+          p{
+            font: 24px 'AsapMedium';
+            color: #4d4d4d;
+            @include max-screen(767px){
+              font-size: 18px;
+            }
+          }
+        }
       }
     }
   }
