@@ -25,6 +25,15 @@
   url('../fonts/AsapBold.ttf') format('truetype'),
   url('../fonts/AsapBold.svg#AsapBold') format('svg');
 }
+@font-face {
+  font-family: 'AsapItalic';
+  src: url('../fonts/AsapItalic.eot');
+  src: url('../fonts/AsapItalic.eot') format('embedded-opentype'),
+  url('../fonts/AsapItalic.woff2') format('woff2'),
+  url('../fonts/AsapItalic.woff') format('woff'),
+  url('../fonts/AsapItalic.ttf') format('truetype'),
+  url('../fonts/AsapItalic.svg#AsapItalic') format('svg');
+}
 
 
 @mixin max-screen($res){
@@ -197,7 +206,7 @@ header {
 }
 .section_1{
   margin-top: 109px;
-  margin-bottom: 124px;
+  margin-bottom: 125px;
   @include max-screen(992px){
     margin-top: 20px;
     margin-bottom: 30px;
@@ -205,21 +214,18 @@ header {
   @include max-screen(767px){
     margin-bottom: 40px;
   }
-  .container{padding-left: -15px;padding-right: -15px;
+  .container{
+    padding-left: -15px;padding-right: -15px;
     .row{
       img{
         width: 100%;
         height: 100%;
-        @include max-screen(1169px){
-          width: 100%;
-          height: 100%;
-        }
         @include max-screen(992px){
           width: 100%;
           height: 100%;
-          margin-top: 40px;
+          margin-top: 20px;
         }
-        @include max-screen(992px){
+        @include max-screen(767px){
           margin-top: 0;
         }
       }
@@ -374,3 +380,284 @@ header {
     }
   }
 }
+.section_3{
+  margin-bottom: 125px;
+  @include max-screen(992px){
+    margin-bottom: 30px;
+  }
+  @include max-screen(767px){
+    margin-bottom: 40px;
+  }
+  .container{
+    .row{
+      h2{
+        font: 46px/49px 'AsapBold';
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        color: #7c7c7c;
+        margin-top: 120px;
+        margin-bottom: 50px;
+        &:before{
+          content: "";
+          display: block;
+          border-top: solid 4px;
+          width: 60px;
+          color: #7a7a7a;
+          clear: both;
+          margin: auto auto 10px;
+          @include max-screen(767px){
+            width: 100px;
+            margin: 0 auto 10px;
+          }
+        }
+        @include max-screen(992px){
+          font-size: 40px;
+          margin-top: 30px;
+        }
+        @include max-screen(767px){
+          text-align: center;
+          font-size: 35px;
+          line-height: 35px;
+          margin-bottom: 30px;
+        }
+      }
+      img{
+        width: 85%;
+        @include max-screen(767px){
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+.section_4{
+  background-color: #f6f6f6;
+  .container{
+    .row{
+      h2{
+        font: 46px/49px 'AsapBold';
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        color: #7c7c7c;
+        margin-top: 120px;
+        margin-bottom: 50px;
+        &:before{
+          content: "";
+          display: block;
+          border-top: solid 4px;
+          width: 60px;
+          color: #7a7a7a;
+          clear: both;
+          margin: auto auto 10px;
+          @include max-screen(767px){
+            width: 100px;
+            margin: 0 auto 10px;
+          }
+        }
+        @include max-screen(992px){
+          font-size: 40px;
+          margin-top: 30px;
+        }
+        @include max-screen(767px){
+          text-align: center;
+          font-size: 35px;
+          line-height: 35px;
+          margin-bottom: 30px;
+        }
+      }
+      .link_img{
+        a{
+          img{
+            width: 100%;
+            margin-bottom: 30px;
+            transition: 0.4s;
+            &:hover{
+              -webkit-box-shadow: 0 0 10px 10px #8C8C8C;
+              box-shadow: 0 0 70px 5px #8C8C8C;
+              transition: 0.4s;
+            }
+            @include max-screen(992px){
+              width: 90%;
+            }
+            @include max-screen(767px){
+              width: 80%;
+            }
+          }
+        }
+      }
+      .port_btn{
+        a{
+          display: inline-block;
+          font: 16px/48px 'AsapMedium';
+          text-align: center;
+          letter-spacing: 1px;
+          color: #4d4d4d;
+          text-decoration: none;
+          text-transform: uppercase;
+          border: solid 1px;
+          width: 190px;
+          height: 50px;
+          transition: 0.3s;
+          margin-bottom: 120px;
+          &:hover{
+            box-shadow: 0 10px 20px 0 #ababab;
+            transition: 0.3s;
+            border: solid 1px transparent;
+            background-color: #fff;
+          }
+          @include max-screen(992px){
+            width: 120px;
+            height: 35px;
+            line-height: 33px;
+            font-size: 12px;
+            margin-top: 5px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+.section_5{
+  .container{
+    .row{
+      .owl-carousel{
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+        .owl-dots{
+          text-align: center;
+          .owl-dot{
+            display: inline-block;
+            span{
+              border: solid 1px;
+              height: 11px;
+              width: 11px;
+              margin: 0 4px 33px 0;
+              display: block;
+              padding: 0;
+            }
+            &.active span{
+              background-color: #212121;
+            }
+            &:hover span{
+              background-color: #6d6e71;
+            }
+          }
+        }
+      }
+      h2{
+        font: 46px/49px 'AsapBold';
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        color: #7c7c7c;
+        margin-top: 120px;
+        margin-bottom: 50px;
+        &:before{
+          content: "";
+          display: block;
+          border-top: solid 4px;
+          width: 60px;
+          color: #7a7a7a;
+          clear: both;
+          margin: auto auto 10px;
+          @include max-screen(767px){
+            width: 100px;
+            margin: 0 auto 10px;
+          }
+        }
+        @include max-screen(992px){
+          font-size: 40px;
+          margin-top: 30px;
+        }
+        @include max-screen(767px){
+          text-align: center;
+          font-size: 35px;
+          line-height: 35px;
+          margin-bottom: 30px;
+        }
+      }
+      .carousel{
+        border: solid 1px;
+        width: 82%;
+        margin: 0 auto 400px;
+        @include max-screen(767px){
+          width: 100%;
+        }
+        .carousel_img{
+          a{
+            img{
+              float: right;
+              max-width: 160px;
+              width: 100%;
+              margin-top: 80px;
+              margin-bottom: 105px;
+              transition: 0.3s;
+              @include max-screen(992px){
+                margin-bottom: 50px;
+              }
+
+              @include max-screen(767px){
+                max-width: 230px;
+                width: 100%;
+                border-radius: 30px;
+                float: none;
+                display: block;
+                margin: 20px auto 0;
+              }
+              &:hover{
+                box-shadow: 0 0 20px 5px #5C5C5C;
+                transition: 0.3s;
+              }
+            }
+          }
+        }
+        .carousel_description{
+          margin-top: 65px;
+          max-width: 60%;
+          @include max-screen(992px){
+            margin-top: 30px;
+            //max-width: 100%;
+          }
+          @include max-screen(767px){
+            float: none;
+            display: block;
+            margin: auto;
+            text-align: center;
+            max-width: 100%;
+          }
+          h3{
+            font: 30px 'AsapMedium';
+            color: #212121;
+            text-transform: uppercase;
+            margin-bottom: 0;
+          }
+          span{
+            font: 12px 'AsapItalic';
+            color: #212121;
+          }
+          p{
+            font: 16px 'AsapRegular';
+            color: #212121;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 0;
+            @include max-screen(992px){
+              margin-top: 0;
+            }
+            @include max-screen(767px){
+              width: 100%;
+              text-align: justify;
+              text-transform: none;
+              margin-bottom: 30px;
+            }
+          }
+        }
+       }
+    }
+  }
+}
+
+//.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
+//  background: red;
+//}
