@@ -34,6 +34,16 @@
   url('../fonts/AsapItalic.ttf') format('truetype'),
   url('../fonts/AsapItalic.svg#AsapItalic') format('svg');
 }
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('../fonts/MontserratRegular.eot');
+  src: url('../fonts/MontserratRegular.eot') format('embedded-opentype'),
+  url('../fonts/MontserratRegular.woff2') format('woff2'),
+  url('../fonts/MontserratRegular.woff') format('woff'),
+  url('../fonts/MontserratRegular.ttf') format('truetype'),
+  url('../fonts/MontserratRegular.svg#MontserratRegular') format('svg');
+}
+
 
 
 @mixin max-screen($res){
@@ -204,6 +214,17 @@ header {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 .section_1{
   margin-top: 109px;
   margin-bottom: 125px;
@@ -318,6 +339,17 @@ header {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 .section_2{
   background-color: #f6f6f6;
   .container{
@@ -367,10 +399,16 @@ header {
           img{
             margin: 0 auto;
             text-align: center;
+
           }
           p{
             font: 24px 'AsapMedium';
             color: #4d4d4d;
+            margin-top: 10px;
+            transition: 0.3s;
+            &:hover{
+              color: black;
+            }
             @include max-screen(767px){
               font-size: 18px;
             }
@@ -380,6 +418,18 @@ header {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 .section_3{
   margin-bottom: 125px;
   @include max-screen(992px){
@@ -430,6 +480,17 @@ header {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 .section_4{
   background-color: #f6f6f6;
   .container{
@@ -518,6 +579,12 @@ header {
     }
   }
 }
+
+
+
+
+
+
 .section_5{
   .container{
     .row{
@@ -580,9 +647,10 @@ header {
       .carousel{
         border: solid 1px;
         width: 82%;
-        margin: 0 auto 400px;
+        margin: 0 auto 120px;
         @include max-screen(767px){
           width: 100%;
+          margin-bottom: 40px;
         }
         .carousel_img{
           a{
@@ -658,6 +726,275 @@ header {
   }
 }
 
-//.owl-dots .owl-dot.active span, .owl-dots .owl-dot:hover span {
-//  background: red;
-//}
+
+
+
+
+
+
+
+.section_6{
+  background-color: #f6f6f6;
+  .container{
+    .row{
+      margin-top: 50px;
+      margin-bottom: 60px;
+      a{
+        text-decoration: none;
+
+        h4{
+          font: 30px 'AsapMedium';
+          color: #212121;
+          margin-top: 20px;
+          margin-bottom: 5px;
+          @include max-screen(767px){
+            font-size: 20px;
+          }
+        }
+        p{
+          font: 22px 'AsapRegular';
+          color: #212121;
+          text-transform: uppercase;
+          margin-bottom: 0;
+          @include max-screen(767px){
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.clear_area{
+  height: 155px;
+  background-color: transparent;
+  @include max-screen(767px){
+    height: 30px;
+  }
+}
+
+
+
+
+
+
+footer{
+  background-color: #646465;
+  .foot_bg{
+    max-width: 2000px;
+    width: 100%;
+    background: url("../images/footer_bg_lg.png") no-repeat center;
+    background-size: cover;
+    margin: auto;
+    @include max-screen(992px){
+      width: 100%;
+    }
+  }
+  .container{
+    .row{
+      margin: 0;
+      h2{
+        font: 46px/49px 'AsapBold';
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        color: #f3f3f3;
+        margin-top: 120px;
+        margin-bottom: 10px;
+        &:before{
+          content: "";
+          display: block;
+          border-top: solid 4px;
+          width: 60px;
+          color: #c1c1c1;
+          clear: both;
+          margin: auto auto 10px;
+          @include max-screen(767px){
+            width: 100px;
+            margin: 0 auto 10px;
+          }
+        }
+        @include max-screen(992px){
+          font-size: 40px;
+          margin-top: 40px;
+        }
+        @include max-screen(767px){
+          text-align: center;
+          font-size: 35px;
+          line-height: 35px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .form_area{
+      border-bottom: solid 1px white;
+      .row{
+        margin-bottom: 58px;
+        @include max-screen(767px){
+          margin-bottom: 30px;
+        }
+      }
+      .top-input{
+        @include max-screen(767px){
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+      }
+      input{
+        width: 100%;
+        height: 57px;
+        font: 16px 'AsapRegular';
+        letter-spacing: 1px;
+        background-color: #ffffff;
+        color: #212121;
+        margin-top: 30px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border: none;
+        outline:none;
+        @include max-screen(767px){
+          height: 40px;
+          margin-top: 10px;
+        }
+      }
+      textarea{
+        width: 100%;
+        height: 207px;
+        font: 16px/67px 'AsapRegular';
+        letter-spacing: 1px;
+        background-color: #fff;
+        color: #212121;
+        margin-top: 30px;
+        padding-left: 10px;
+        box-sizing: border-box;
+        border: none;
+        outline:none;
+        resize: none;
+        @include max-screen(767px){
+          margin-top: 10px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+      }
+      button{
+        box-sizing: border-box;
+        background-color: #fff;
+        font: 16px 'AsapMedium';
+        letter-spacing: 3px;
+        color: #212121;
+        text-transform: uppercase;
+        margin-top: 25px;
+        width: 123px;
+        height: 50px;
+        border: none;
+        outline: none;
+        transition: 0.5s;
+        @include max-screen(767px){
+          font-size: 12px;
+          width: 100px;
+          height: 35px;
+          margin-top: 10px;
+        }
+        &:hover{
+          box-shadow: 0 10px 50px 10px #393a3a;
+          transition: 0.5s;
+        }
+        span{
+          &:after{
+            content: url("../images/button_arrow.png");
+            padding-left: 5px;
+            @include max-screen(767px){
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .bottom_foot{
+      margin: 25px 0 20px;
+      .foot_icon{
+        padding: 0;
+        @include max-screen(767px){
+          text-align: center;
+        }
+        ul{
+          list-style: none;
+          padding: 0;
+          li{
+            display: inline-block;
+            margin-right: 5px;
+            &:hover:first-child i{
+              background-color: #4267b2;
+              color: white;
+              transform: rotate( 360deg);
+              transition: 0.3s;
+            }
+            &:hover:nth-child(2) i{
+              background-color: #0084b4;
+              color: white;
+              transform: rotate( 360deg);
+              transition: 0.3s;
+            }
+            &:hover:nth-child(3) i{
+              background-color: #0274b3;
+              color: white;
+              transform: rotate( 360deg);
+              transition: 0.3s;
+            }
+            &:hover:nth-child(4) i{
+              background-color: #ce3525;
+              color: white;
+              transform: rotate( 360deg);
+              transition: 0.3s;
+            }
+            &:hover:nth-child(5) i{
+              background-color: #001431;
+              color: #5ba2f7;
+              transition: 0.3s;
+              transform: rotate( 360deg);
+              border: solid 2px #5ba2f7;
+            }
+            &:hover:nth-child(6) i{
+              background-color: #e34a86;
+              color: white;
+              transform: rotate( 360deg);
+              transition: 0.3s;
+            }
+            a{
+              text-decoration: none;
+              background-color: transparent;
+              padding: 7px 0 4px;
+              line-height: 27px;
+              border-radius: 5px;
+              i{
+                color: #4d4d4d;
+                background-color: white;
+                width: 27px;
+                height: 27px;
+                text-align: center;
+                font-size: 17px;
+                line-height: 23px;
+                transition: 1s;
+                padding-bottom: 2px;
+                border: solid 2px transparent;
+                @include max-screen(767px){
+                  border-radius: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      p{
+        font: 16px 'MontserratRegular';
+        color: white;
+        @include max-screen(767px){
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
